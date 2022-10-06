@@ -4,7 +4,7 @@ using System;
 
 namespace ConsoleApp
 {
-    public class Appointment : Patient
+    public class Appointment : IPatient
     {
         public int age { get; set; }
         public string? name { get; set; }
@@ -41,24 +41,25 @@ namespace ConsoleApp
             appointment.Welcome();
             Console.WriteLine($"Appointment regarding checkup of '{appointment.name}', age: '{appointment.age}', height: '{appointment.heightFt}' is happening... ");
             Thread.Sleep(4000);
+            onAppointmentDone();
         }
 
         protected virtual void onAppointmentDone()
         {
             if(AppointmentDone != null)
             {
-                AppointmentDone = null;
+                onAppointmentDone(this, null);               
             }
         }
-
-    }
-    public class AppointmentService
-    {
         public void onAppointmentDone(object source, EventArgs eventArgs)
         {
             Console.WriteLine("Virtual appointment has been completed, see you next time!");
         }
     }
+    //public class AppointmentService
+    //{
+
+    //}
 
 }
 

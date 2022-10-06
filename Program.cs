@@ -23,10 +23,9 @@ namespace ConsoleApp
             var appointment = new Appointment { age = Age, name = Name, heightFt = HeightFt};
 
             var appointmentProcessor = new AppointmentProcessor();
-            var appointmentService = new AppointmentService();
-            appointmentProcessor.AppointmentDone += appointmentService.onAppointmentDone;
+            //var appointmentService = new AppointmentService();
+            appointmentProcessor.AppointmentDone += appointmentProcessor.onAppointmentDone;
             appointmentProcessor.AppointmentArrival(appointment);
-            Console.ReadKey();
 
         }
     }

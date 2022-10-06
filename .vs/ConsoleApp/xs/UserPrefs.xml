@@ -1,4 +1,30 @@
 ﻿<Properties StartupConfiguration="{22EA38D5-80D5-4971-BE80-4C241D5489BD}|Default">
-  <MonoDevelop.Ide.ItemProperties.ConsoleApp FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Class1.cs" line="4" column="17" endLine="4" endColumn="27" offsetX="-1" offsetY="-1" expression="Interface1" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Appointment.cs">
+    <Files>
+      <File FileName="Program.cs" Line="1" Column="16" />
+      <File FileName="Class1.cs" Line="1" Column="21" NotebookId="1" />
+      <File FileName="Interface1.cs" Line="1" Column="21" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConsoleApp" expanded="True">
+            <Node name="ConsoleApp" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

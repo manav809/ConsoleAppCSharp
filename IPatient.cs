@@ -4,7 +4,7 @@ using System;
 
 namespace ConsoleApp
 {
-    interface Patient
+    interface IPatient
     {
         int age { get; set; }
         string name { get; set; }
