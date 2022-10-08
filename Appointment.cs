@@ -40,8 +40,9 @@ namespace ConsoleApp
         {
             appointment.Welcome();
             Console.WriteLine($"Appointment regarding checkup of '{appointment.name}', age: '{appointment.age}', height: '{appointment.heightFt}' is happening... ");
-            Thread.Sleep(4000);
+            Thread.Sleep(6000);
             onAppointmentDone();
+            Thread.Sleep(4000);
         }
 
         protected virtual void onAppointmentDone()
